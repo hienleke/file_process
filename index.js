@@ -11,7 +11,7 @@ app.get('/process',async  (req, res) => {
     let inputFile = './/public//ThinkPrompt_BE_testing.pptx';
     let outputFile  = './/public//ThinkPrompt_BE_testingOUTPUT.pptx'
    let result  = await documentService.processFile(inputFile,outputFile)
-    res.send(result + "pls check i this path  " +  outputFile);
+    res.send("pls check this path to know the result in your source code folder :" +  outputFile);
 });
 
 // Start the server
